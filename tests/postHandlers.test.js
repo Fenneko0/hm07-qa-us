@@ -50,8 +50,6 @@ test("Test Product", async () => {
       console.log(`Checking store: ${store}`);
       const products = data[store];
       console.log(`Products in store ${store}:`, products);
-
-
     }
   } catch (error) {
     console.error("Fetch Error:", error);
