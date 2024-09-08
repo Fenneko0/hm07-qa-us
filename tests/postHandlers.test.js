@@ -52,10 +52,10 @@ test("Test Product", async () => {
       console.log(`Products in store ${store}:`, products);
 
       // Check if products has the queriedProduct
-      if (products.hasOwnProperty(queriedProduct)) {
-        testProduct = queriedProduct;
-        break; // Exit loop once found
-      }
+      // if (products.hasOwnProperty(queriedProduct)) {
+      //   testProduct = queriedProduct;
+      //   break; // Exit loop once found
+      // }
     }
   } catch (error) {
     console.error("Fetch Error:", error);
