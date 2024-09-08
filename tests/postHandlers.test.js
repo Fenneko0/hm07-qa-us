@@ -30,7 +30,6 @@ test("status should be 200", async () => {
 
 // Testing the presence of specific product accross all stores
 test("Test Product", async () => {
-  let testProduct;
   try {
     const response = await fetch(`${config.API_URL}/api/v1/warehouses/check`, {
       method: "POST",
@@ -44,7 +43,6 @@ test("Test Product", async () => {
     console.log("Response Data:", data); // Log the entire response
 
     // Verify specific product across all stores
-    const queriedProduct = "Sprite Soft Drink";
     const storeNames = Object.keys(data); // Ensure this matches the response structure
     for (const store of storeNames) {
       console.log(`Checking store: ${store}`);
