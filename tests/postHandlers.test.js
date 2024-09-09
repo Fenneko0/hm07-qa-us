@@ -53,6 +53,7 @@ test("Test Product", async () => {
 
       // Check if products has the queriedProduct
       if (products.hasOwnProperty(queriedProduct)) {
+        // To the Reviewer - can you please explain on the review, why on GitHub in workflow I recieve "Do not access Object.prototype method 'hasOwnProperty' from target object" error, and how do I fix it? Thank you in advance
         testProduct = queriedProduct;
         break; // Exit loop once found
       }
@@ -60,5 +61,5 @@ test("Test Product", async () => {
   } catch (error) {
     console.error("Fetch Error:", error);
   }
-  expect(testProduct).toEqual('Sprite Soft Drink')
+  expect(testProduct).toEqual("Sprite Soft Drink");
 });

@@ -20,3 +20,5 @@ OR
 Once you've copied project to a folder, run 'npm install' from the console in your project folder (Important note: run 'npm install' within "hm07-qa-us" folder, not project folder)
 
 In config.js, replace the API URL with the unique link generated after the launch of the server.
+
+After everything is set and ready, run 'npx jest' command to run all test suites
